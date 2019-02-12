@@ -30,6 +30,22 @@ body {
   width: 100vw;
 } */
 
+
+
+/* GRID
+- usamos display: grid para fazer o grid no css.
+- aí temos que nomear as áreas do grid e pra isso usamos grid-area: 'nome da area' em cada elemento do grid
+- no seu grid vc vai definir como seu grid vai ser, para isso usamos o grid-template-areas, nele colocamos as colunas e linhas conforme os nomes do grid-area que definimos antes
+    Ex:                      coluna1 coluna2
+        grid-template-areas: 'header header'  linha1
+                             'section aside'  linha2
+                             'footer footer'  linha3
+
+    Nesse ex nosso grid tem duas colunas e duas linhas
+- para deixar um espaço vazio no grid basta colocar um .
+-com o grid-template-rows e o grid-template-columns vc consegue definir um tamanho para as suas linhas e colunas do grid respectivamente.
+*/
+
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 25vw);
